@@ -10,7 +10,9 @@ Serve this directory with a static web server:
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000. There is no build step, package installation, or application backend. Deploy this directory as the static document root. Domain and hosting configuration are separate from this repository.
+Open http://localhost:8000. There is no build step, package installation, or application backend. Deploy this directory as the static document root. GitHub Actions validates and packages pull requests. Changes merged to `main` deploy the packaged site to GitHub Pages. The artifact contains only public website files.
+
+Repository Pages settings and `greenfield.work` DNS are managed through `fabricahq/infra-live`. Pages must be enabled with GitHub Actions as its source before deployment. Custom-domain attachment and HTTPS follow that repository's rollout instructions; an Actions deployment does not use a `CNAME` file.
 
 ## Design and behavior
 
