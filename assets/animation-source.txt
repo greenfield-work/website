@@ -1,0 +1,17 @@
+Greenfield workflow animation
+
+Custom small gardener character, work cap, clothing, dense grass, fields,
+planting poses, turns, and hands-behind-head resting pose,
+lighting and rendering prepared for Greenfield in Blender.
+
+Walk motion is adapted from the Walk action in the official Three.js example:
+https://github.com/mrdoob/three.js/blob/dev/examples/models/gltf/Soldier.glb
+The source soldier mesh and textures are not included in the rendered artwork.
+The source motion clip uses a Mixamo skeleton. Movement speed is synchronized
+with its grounded foot phase. No third-party scripts or 3D models load in the
+visitor's browser. The transparent render is packed as color on the left and
+a grayscale alpha mask on the right of one H.264 video. A small WebGL
+compositor restores transparency; the static WebP fallback also has alpha.
+
+The accompanying Blender source and render scripts are kept in the local
+Greenfield motion study, separate from this static website package.

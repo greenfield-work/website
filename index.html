@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8F7F1">
+  <meta name="description" content="We're building a new way for small-business owners to put AI to work. Greenfield is coming soon.">
+  <title>Greenfield - Run an AI-native small business.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/Figtree-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="theme.js?v=system"></script>
+  <link rel="stylesheet" href="styles.css?v=transparent">
+  <script type="module" src="scene.js?v=alpha"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="./" aria-label="Greenfield home"><img class="brand-light" src="assets/greenfield-primary.svg" alt="Greenfield" width="204" height="48"><img class="brand-dark" src="assets/greenfield-primary-reverse.svg" alt="Greenfield" width="204" height="48"></a>
+      <div class="header-actions">
+        <span class="coming-soon">Coming soon</span>
+        <details id="theme-control" hidden>
+          <summary aria-label="Color theme: System" title="Color theme: System">
+            <span data-theme-icon="system"><svg aria-hidden="true"><use href="assets/theme-system.svg#theme-system" /></svg></span>
+            <span data-theme-icon="light" hidden><svg aria-hidden="true"><use href="assets/theme-light.svg#theme-light" /></svg></span>
+            <span data-theme-icon="dark" hidden><svg aria-hidden="true"><use href="assets/theme-dark.svg#theme-dark" /></svg></span>
+          </summary>
+          <div role="group" aria-label="Color theme">
+            <button type="button" data-theme-choice="light" aria-pressed="false">
+              <svg aria-hidden="true"><use href="assets/theme-light.svg#theme-light" /></svg><span>Light</span>
+              <svg aria-hidden="true"><use href="assets/check.svg#check" /></svg>
+            </button>
+            <button type="button" data-theme-choice="dark" aria-pressed="false">
+              <svg aria-hidden="true"><use href="assets/theme-dark.svg#theme-dark" /></svg><span>Dark</span>
+              <svg aria-hidden="true"><use href="assets/check.svg#check" /></svg>
+            </button>
+            <button type="button" data-theme-choice="system" aria-pressed="false">
+              <svg aria-hidden="true"><use href="assets/theme-system.svg#theme-system" /></svg><span>System</span>
+              <svg aria-hidden="true"><use href="assets/check.svg#check" /></svg>
+            </button>
+          </div>
+        </details>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Run an<br><span>AI-native</span><br>small business.</h1>
+        <p>We're building a new way for small-business owners to put AI to work.</p>
+      </div>
+      <div class="landscape">
+        <div class="scene" aria-hidden="true">
+          <img class="scene-poster" src="assets/garden-poster.webp?v=alpha" alt="" width="768" height="576">
+          <canvas class="scene-canvas" width="768" height="576"></canvas>
+          <video class="scene-video" muted playsinline loop preload="none" width="768" height="576" tabindex="-1" data-src="assets/garden-transparent.mp4?v=alpha-final"></video>
+        </div>
+        <button class="motion-control" type="button" hidden aria-label="Pause"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="pause-icon" d="M5 4v8M11 4v8"/><path class="play-icon" d="m5 3 8 5-8 5Z"/></svg><span>Pause</span></button>
+      </div>
+    </main>
+    <footer><a href="https://fabricahq.com">Built by <span>Fabrica</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4H3v9h9v-3M9 3h4v4M13 3 7 9"/></svg></a></footer>
+  </div>
+</body>
+</html>
